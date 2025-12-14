@@ -53,9 +53,9 @@ Performed using MySQL:
 
 - Split datetime into:
 
- - date
+   1. date
 
- - time
+   2. time
 
 - Extracted hour from time for peak-hour analysis
 
@@ -90,8 +90,8 @@ Performed using MySQL:
 
 - Best-selling coffee products by:
 
- - Total revenue
- - Transaction count
+   1. Total revenue
+   2. Transaction count
 
 - Price change tracking over time
 
@@ -126,43 +126,43 @@ Each business question answered in SQL was converted into summary tables and imp
 
 **Visual Insights**
 
-- Revenue Trend (Monthly)
+1. Revenue Trend (Monthly)
 
  - Shows month-by-month revenue variation
 
  - Helps identify seasonality and peak months
 
-- Units Sold by Hour
+2. Units Sold by Hour
 
  - Highlights peak sales hours during the day
 
  - Useful for staffing and operational planning
 
-- Revenue by Coffee Type
+3. Revenue by Coffee Type
 
  - Compares revenue contribution of each product
 
  - Identifies high-value vs low-value items
 
-- Units Sold by Coffee Type
+4. Units Sold by Coffee Type
 
  - Focuses on demand volume rather than revenue
 
  - Helps differentiate popular vs premium products
 
-- Top Card Customers
+5. Top Card Customers
 
  - Displays highest revenue-generating card users
 
  - Includes total spend and purchase frequency
 
-- Current vs Average Monthly Sales
+6. Current vs Average Monthly Sales
 
  - Compares current performance against historical average
 
  - Indicates whether sales are above or below benchmark
 
-- Previous vs Current Month Revenue
+7. Previous vs Current Month Revenue
 
  - Tracks short-term growth or decline
 
@@ -170,19 +170,19 @@ Each business question answered in SQL was converted into summary tables and imp
 
 **Workflow**
 
-- Performed data cleaning and analysis in MySQL
+1. Performed data cleaning and analysis in MySQL
 
-- Converted each SQL insight into aggregated tables
+2. Converted each SQL insight into aggregated tables
 
-- Imported tables into Power BI
+3. Imported tables into Power BI
 
-- Designed an interactive dashboard with:
+4. Designed an interactive dashboard with:
 
- - Monthly slicers
+5. Monthly slicers
 
- - KPI cards
+6. KPI cards
 
- - Trend and comparison visuals
+7. Trend and comparison visuals
 
 ## Key Business Insights
 
