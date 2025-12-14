@@ -78,7 +78,7 @@ Performed using MySQL:
 
 - Revenue split by cash vs card payments
 
-- Customer Insights (Card Users)
+**Customer Insights (Card Users)**
 
 - Top card users by total revenue
 
@@ -126,7 +126,7 @@ Each business question answered in SQL was converted into summary tables and imp
 
 **Visual Insights**
 
--Revenue Trend (Monthly)
+- Revenue Trend (Monthly)
 
  - Shows month-by-month revenue variation
 
