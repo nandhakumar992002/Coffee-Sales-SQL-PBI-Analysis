@@ -107,6 +107,8 @@ Performed using MySQL:
 
 ## Dashboard
 
+![Coffee Sales Dashboard](Coffee-Sales-Analysis_ Dashboard.png)
+
 The dashboard was built in Power BI using insights generated from MySQL queries.
 Each business question answered in SQL was converted into summary tables and imported into Power BI for visualization.
 
