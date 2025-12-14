@@ -1,45 +1,205 @@
 # Coffee Sales SQL Analysis 
 
-## Project Overview
-This is a SQL project I worked on to practice data cleaning and analysis using a coffee sales dataset.  
-The idea was to treat it like a real business case where a coffee shop wants to understand its sales, customers, and product performance.
+## Table of Contents
+- [Case Study](#case-study)
+- [Dataset Description](#dataset-description)
+- [Data Model](#data-model)
+- [Data Cleaning](#data-cleaning)
+- [Data Analysis](#data-analysis)
+- [Dashboard](#dashboard)
+- [Key Business Insights](#key-business-insights)
+- [Tools Used](#tools-used)
+  
 
-I used MySQL to prepare the data and then wrote different queries to answer business questions such as:
-- How much total revenue was generated?
-- Which coffee types sold the most?
-- Who are the top customers?
-- What are the peak sales hours?
-- How do sales change month by month?
+## Case Study
 
----
+A coffee shop wants to understand its sales performance, product demand, customer behavior (card users), and time-based trends to improve pricing, staffing, and payment strategy decisions.
 
-# What I Did
-1. Data Preparation
-   - Split `datetime` into separate `date` and `time` columns.
-   - Removed unnecessary columns.
-   - Created a cleaner structure for analysis.
+This project treats the dataset as a real-world transactional system and answers practical business questions using SQL.
 
-2. Sales Analysis
-   - Total sales, average price, number of unique customers.
-   - Daily and monthly sales trends.
-   - Revenue split by cash vs. card.
+## Dataset Description
 
-3. Customer Insights
-   - Top 10 customers by revenue.
-   - Repeat purchases from card users.
+The dataset is a transaction-level coffee sales dataset sourced from Kaggle and stored as a CSV file.
 
-4. Product Insights
-   - Best-selling products by units and revenue.
-   - Price change tracking over time.
-   - Performance compared to average monthly sales.
+Key Fields
 
-5. Seasonality & Trends
-   - Running totals to see growth.
-   - Monthly seasonality report.
-   - Peak sales hours.
+date – Transaction date
 
----
+datetime – Full timestamp of the transaction
 
-Tools Used
-- MySQL for queries and analysis
-- CSV dataset (sample data) from Kaggle
+cash_type – Payment method (Cash / Card)
+
+card – Card identifier (null for cash payments)
+
+money – Revenue generated per transaction
+
+coffee_name – Coffee product sold
+
+## Data Model
+
+A single fact table representing coffee sales transactions, designed for:
+
+Date-based analysis
+
+Time-of-day analysis
+
+Product-level performance
+
+Payment method comparison
+
+## Data Cleaning
+
+Performed using MySQL:
+
+Split datetime into:
+
+date
+
+time
+
+Extracted hour from time for peak-hour analysis
+
+Standardized payment values in cash_type
+
+Handled null values in card for cash transactions
+
+Removed redundant columns after transformation
+
+Ensured numeric consistency for money
+
+## Data Analysis
+Sales Analysis
+
+Total revenue generated
+
+Average revenue per transaction
+
+Daily and monthly sales trends
+
+Revenue split by cash vs card payments
+
+Customer Insights (Card Users)
+
+Top card users by total revenue
+
+Repeat purchase behavior using card identifiers
+
+Contribution of card users to overall revenue
+
+Product Insights
+
+Best-selling coffee products by:
+
+Total revenue
+
+Transaction count
+
+Price change tracking over time
+
+Product performance vs average monthly sales
+
+Seasonality & Trends
+
+Month-over-month revenue comparison
+
+Running totals to analyze sales growth
+
+Peak sales hours during the day
+
+## Dashboard
+
+The dashboard was built in Power BI using insights generated from MySQL queries.
+Each business question answered in SQL was converted into summary tables and imported into Power BI for visualization.
+
+Dashboard Highlights
+
+Total Revenue: 103.76K
+
+Total Units Sold: 3.26K
+
+Sales Period: 12 months
+
+Product Count: 8 coffee types
+
+Best-Selling Product (Units): Americano with Milk (764 units)
+
+Top Revenue Product: Latte (25.43K)
+
+Visual Insights
+
+Revenue Trend (Monthly)
+
+Shows month-by-month revenue variation
+
+Helps identify seasonality and peak months
+
+Units Sold by Hour
+
+Highlights peak sales hours during the day
+
+Useful for staffing and operational planning
+
+Revenue by Coffee Type
+
+Compares revenue contribution of each product
+
+Identifies high-value vs low-value items
+
+Units Sold by Coffee Type
+
+Focuses on demand volume rather than revenue
+
+Helps differentiate popular vs premium products
+
+Top Card Customers
+
+Displays highest revenue-generating card users
+
+Includes total spend and purchase frequency
+
+Current vs Average Monthly Sales
+
+Compares current performance against historical average
+
+Indicates whether sales are above or below benchmark
+
+Previous vs Current Month Revenue
+
+Tracks short-term growth or decline
+
+Useful for monthly performance monitoring
+
+Workflow
+
+Performed data cleaning and analysis in MySQL
+
+Converted each SQL insight into aggregated tables
+
+Imported tables into Power BI
+
+Designed an interactive dashboard with:
+
+Monthly slicers
+
+KPI cards
+
+Trend and comparison visuals
+
+## Key Business Insights
+
+Certain coffee types consistently generate higher revenue
+
+Peak sales hours identified for operational planning
+
+Card payments show higher repeat usage
+
+Clear monthly seasonality patterns in sales
+
+Some products perform above average compared to monthly benchmarks
+
+## Tools Used
+- **MySQL** – Data cleaning, transformation, and analytical queries  
+- **Power BI** – Data modeling and dashboard visualization  
+- **CSV Dataset** – Coffee sales transactional data from Kaggle  
+- **GitHub** – Version control and project documentation  
+
