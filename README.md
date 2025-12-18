@@ -9,6 +9,7 @@
 - [Dashboard](#dashboard)
 - [Key Business Insights](#key-business-insights)
 - [Tools Used](#tools-used)
+- [Workflow Diagram](#workflow-diagram)
   
 
 ## Case Study
@@ -202,5 +203,10 @@ Each business question answered in SQL was converted into summary tables and imp
 - **MySQL** – Data cleaning, transformation, and analytical queries  
 - **Power BI** – Data modeling and dashboard visualization  
 - **CSV Dataset** – Coffee sales transactional data from Kaggle  
-- **GitHub** – Version control and project documentation  
+- **GitHub** – Version control and project documentation
+
+## Workflow Diagram
+
+![Project Workflow Diagram](project-workflow-diagram.png)
+
 
