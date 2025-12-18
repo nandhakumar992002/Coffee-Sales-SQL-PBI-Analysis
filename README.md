@@ -181,11 +181,9 @@ Each business question answered in SQL was converted into summary tables and imp
 
 4. Designed an interactive dashboard with:
 
-5. Monthly slicers
-
-6. KPI cards
-
-7. Trend and comparison visuals
+   1. Monthly slicers
+   2. KPI cards
+   3. Trend and comparison visuals
 
 ## Key Business Insights
 
